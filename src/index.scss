@@ -1,0 +1,82 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .nav {
+    height: 5%;
+    background-color: #326ba8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    color: white;
+
+    .options {
+      height: 60%;
+
+        img{
+          height: 100%;
+        }
+    }
+  }
+
+  .Page {
+    height: 100%;
+    display: flex;
+
+    .SideNav {
+      width: 20%;
+      background-color: #329ca8;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2.5%
+    }
+
+    .Dashboard {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+
+      .DateBar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .month {
+          border: 2px solid red;
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .days {
+          border: 2px solid green;
+          width: 80%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+        }
+      }
+
+      .habit {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .noHabits {
+        height: 10%;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
